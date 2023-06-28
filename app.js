@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   database: 'sql12629207'
 })
 app.get('/', (req, res) => {
-  res.send("App is Running");
+  res.send(`<a href="/login">App is Running! Login Please</a>`);
 });
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/login.html');
